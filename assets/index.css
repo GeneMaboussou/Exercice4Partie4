@@ -1,0 +1,78 @@
+#container {
+      background-color: #bfbfbf;      
+}
+#calculator-top {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: 50px 100px 70px;
+    grid-template-areas:
+        "menu-burger standard standard standard standard arrow"
+        "result result result result result result"
+        "mc mr mn mm ms mp";
+    padding: 10px;
+}
+#menu-burger {
+    grid-area: menu-burger;
+}
+#standard {
+    grid-area: standard;
+    margin-right: auto;
+}
+#arrow {
+    grid-area: arrow;
+    text-align: center;
+}
+#result {
+    grid-area: result;
+    font-size: 70px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.item {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#mc {
+    grid-area: mc;
+    color:#706e6f;
+}
+#mr {
+    grid-area: mr;
+    color:#706e6f;
+}
+#mn {
+    grid-area: mn;
+}
+#mm {
+    grid-area: mm;
+}
+#ms {
+    grid-area: ms;
+} 
+#mp {
+    grid-area: mp;
+    color:#706e6f;
+}
+#calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    gap: 10px;
+    font-size: 30px;
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.calc-button {
+    padding: 20px;
+    background-color: #d9d9d9;
+}
+.symbol-number {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+#symbol-equal {
+    background-color: #72a2c8;
+}
